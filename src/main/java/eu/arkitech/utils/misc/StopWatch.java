@@ -1,5 +1,15 @@
 package eu.arkitech.utils.misc;
 
+/**
+ * Utility class to ease code execution time measurement.
+ * 
+ * Example usage:
+ * StopWatch stopWatch = StopWatch.createAndStart();
+ * // some code that you want to measure its execution time
+ * System.out.println("execution time: " + stopWatch.stop().getTotalTimeInMillis());
+ * 
+ * @author rcugut
+ */
 public class StopWatch
 {
 	private long startTime = -1;

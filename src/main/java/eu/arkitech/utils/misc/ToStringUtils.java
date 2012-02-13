@@ -7,11 +7,16 @@ import java.util.Map.Entry;
 
 public class ToStringUtils
 {
-	public static String toString(Map<?, ?> m)
+	public static String toString(Map<?, ?> map)
 	{
+		if(map == null)
+		{
+			return "null";
+		}
+		
 		StringBuilder sb = new StringBuilder("[");
         String sep = "";
-        for (Entry<?, ?> entry : m.entrySet()) {
+        for (Entry<?, ?> entry : map.entrySet()) {
             sb.append(sep)
               .append(entry.getKey().toString())
               .append("=")

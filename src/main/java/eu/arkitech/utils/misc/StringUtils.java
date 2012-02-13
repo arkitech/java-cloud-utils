@@ -1,6 +1,11 @@
 package eu.arkitech.utils.misc;
 
 
+/**
+ * Extension of  org.apache.commons.lang.StringUtils  to add [to|from]Hex methods
+ * 
+ * @author rcugut
+ */
 public class StringUtils extends org.apache.commons.lang.StringUtils
 {
 	private static final String HEXES = "0123456789ABCDEF";
