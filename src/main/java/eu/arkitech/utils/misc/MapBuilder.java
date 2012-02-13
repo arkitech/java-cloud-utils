@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Utility class to chain-build a HashMap.
  * 
- * Example:
+ * Example usage:
  * Map<String, Integer> m = MapBuilder<String, Integer>("key1", 1).put("key2", 2).asHashMap();
  * 
  *
